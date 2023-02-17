@@ -25,3 +25,16 @@ document.getElementById('btn-rectangle').addEventListener('click' , function(){
 
     addTableData(nameOfRectangle , rectangleCalculate);
 })
+
+document.getElementById('btn-Parallelogram').addEventListener('click',function(){
+    const nameOfParallelogram = getNameById('parallelogram-name');
+    
+    const parallelogramFirstInputValue = getInputValueById('parallelogram-first-input');
+
+    const parallelogramSecondInputValue = getInputValueById('parallelogram-second-input');
+
+    const parallelogramCalculate = parallelogramFirstInputValue * parallelogramSecondInputValue ;
+
+    addTableData(nameOfParallelogram, parallelogramCalculate);
+
+})
