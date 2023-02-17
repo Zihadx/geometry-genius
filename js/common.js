@@ -1,6 +1,14 @@
+function getNameById(elementId){
+    const elementOfName = document.getElementById(elementId);
+    const elementName = elementOfName.innerText ;
+    return elementName ;
+}
 
-
-
+function getInputValueById(elementInputId){
+    const elementInput = document.getElementById(elementInputId);
+    const elementInputValue = parseFloat(elementInput.value);
+    return elementInputValue ;
+}
 
 
 
