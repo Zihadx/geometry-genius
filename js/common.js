@@ -1,11 +1,9 @@
 function getNameById(elementId){
-    // serial+=1;
+    
     const elementOfName = document.getElementById(elementId);
     const elementName = elementOfName.innerText ;
 
-    
     return elementName ;
-
 }
 
 function getInputValueById(elementInputId){
@@ -14,11 +12,10 @@ function getInputValueById(elementInputId){
     elementInput.value = "" ;
 
      return elementInputValue;
-
 }
 
-
 // set calculate data on table 
+
 let serial = 0 ;
 function addTableData(nameOfElement ,elementCalculat){
     serial+= 1;
@@ -27,7 +24,8 @@ function addTableData(nameOfElement ,elementCalculat){
     tr.innerHTML = `
     <td>${serial}</td>
     <td>${nameOfElement}</td>
-    <td>${elementCalculat}</td>
+    <td>${elementCalculat}cm<sup>2</sup></td>
+
     `
     tableCalculate.appendChild(tr);
 }

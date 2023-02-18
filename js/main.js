@@ -17,6 +17,7 @@ document.getElementById('btn-triangle').addEventListener('click' , function(){
 
     addTableData(nameOfTriangle ,triangleCalculat);
 
+    document.getElementById('btn-triangle').setAttribute('disabled' , true);
 })
 
 // rectangle functional Calculate 
@@ -36,10 +37,11 @@ document.getElementById('btn-rectangle').addEventListener('click' , function(){
         return ;
     }
 
-
     const rectangleCalculate = rectangleFirstInputValue * rectangleSecondInputValue ;
 
     addTableData(nameOfRectangle , rectangleCalculate);
+
+    document.getElementById('btn-rectangle').setAttribute('disabled' , true);
 })
 
 // parallelogram functional Calculate function 
@@ -58,11 +60,11 @@ document.getElementById('btn-Parallelogram').addEventListener('click',function (
         return ;
     }
 
-
     const parallelogramCalculate = parallelogramFirstInputValue * parallelogramSecondInputValue ;
 
     addTableData(nameOfParallelogram, parallelogramCalculate);
 
+    document.getElementById('btn-Parallelogram').setAttribute('disabled' , true);
 })
 
 // rhombus functional Calculate 
@@ -82,10 +84,11 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
         return ;
     }
 
-
     const rhombusCalculate = 0.5 * rhombusFirstInputValue * rhombusSecondInputValue;
 
     addTableData(nameOfRhombus , rhombusCalculate);
+
+    document.getElementById('btn-rhombus').setAttribute('disabled' , true);
 })
 
 // pentagon  functional Calculate
@@ -105,10 +108,11 @@ document.getElementById('btn-pentagon').addEventListener('click' , function(){
         return ;
     }
 
-
     const pentagonCalculate = 0.5 * pentagonFirstInputValue * pentagonSecondInputValue;
 
     addTableData(nameOfpentagon , pentagonCalculate);
+
+    document.getElementById('btn-pentagon').setAttribute('disabled' , true);
 })
 
 // Ellipse functional Calculate 
@@ -128,10 +132,11 @@ document.getElementById('btn-ellipse').addEventListener('click' , function(){
         return ;
     }
 
-
     const ellipseCalculate = 3.14 * ellipseFirstInputValue * ellipseSecondInputValue;
 
     addTableData(nameOfEllipse , ellipseCalculate);
+
+    document.getElementById('btn-ellipse').setAttribute('disabled' , true);
 })
 
 
@@ -140,7 +145,6 @@ document.getElementById('btn-blog').addEventListener('click' , function(){
 })
 
 // Card backgroundColor randomColor genarate 
-
 
 const triangleRandomBg = document.getElementById('triangle-random-bg');
 triangleRandomBg.addEventListener('mouseover', function() {
