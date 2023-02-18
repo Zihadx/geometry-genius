@@ -75,6 +75,11 @@ document.getElementById('btn-ellipse').addEventListener('click' , function(){
     addTableData(nameOfEllipse , ellipseCalculate);
 })
 
+
+document.getElementById('btn-blog').addEventListener('click' , function(){
+    window.location.href = "blog.html"
+})
+
 // Card backgroundColor randomColor genarate 
 
 
