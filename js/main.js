@@ -1,12 +1,9 @@
 document.getElementById('btn-triangle').addEventListener('click' , function(){
 
     const nameOfTriangle = getNameById('name-triangle');
-
     const triangleFirstInputValue = getInputValueById('triangle-first-input');
-
     const triangleSecondInputValue = getInputValueById('triangle-second-input');
-
-
+   
     const triangleCalculat = 0.5 * triangleFirstInputValue * triangleSecondInputValue ;
 
     addTableData(nameOfTriangle ,triangleCalculat);
@@ -18,11 +15,8 @@ document.getElementById('btn-triangle').addEventListener('click' , function(){
 document.getElementById('btn-rectangle').addEventListener('click' , function(){
 
     const nameOfRectangle = getNameById('rectangle-name');
-
     const rectangleFirstInputValue = getInputValueById('rectangle-first-input');
-
     const rectangleSecondInputValue = getInputValueById('rectangle-second-input');
-
 
     const rectangleCalculate = rectangleFirstInputValue * rectangleSecondInputValue ;
 
@@ -33,9 +27,7 @@ document.getElementById('btn-rectangle').addEventListener('click' , function(){
 
 document.getElementById('btn-Parallelogram').addEventListener('click',function (){
     const nameOfParallelogram = getNameById('parallelogram-name');
-    
     const parallelogramFirstInputValue = getInputValueById('parallelogram-first-input');
-
     const parallelogramSecondInputValue = getInputValueById('parallelogram-second-input');
 
     const parallelogramCalculate = parallelogramFirstInputValue * parallelogramSecondInputValue ;
@@ -73,6 +65,7 @@ document.getElementById('btn-pentagon').addEventListener('click' , function(){
 // Ellipse functional Calculate 
 
 document.getElementById('btn-ellipse').addEventListener('click' , function(){
+    
     const nameOfEllipse= getNameById('ellipse-name');
     const ellipseFirstInputValue = getInputValueById('ellipse-first-input');
     const ellipseSecondInputValue = getInputValueById('ellipse-second-input');
