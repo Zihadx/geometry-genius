@@ -7,6 +7,7 @@
     <title>Assignment-5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -27,12 +28,16 @@
         <div class=" flex flex-col md:flex-row px-12 justify-between mt-12">
             <div class=" w-3/4 flex md:flex-row lg:flex-row justify-center flex-wrap gap-8 ">
                
-                <div class="card bg-base-300 shadow-xl w-1/4 text-center px-5">
+                <div id="triangle-random-bg" class="card bg-base-300 shadow-xl text-center px-5">
                     <figure class="flex justify-center mt-4 h-40"><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body mt-4">
                       <h2 id="name-triangle" class="font-bold text-3xl mt-4">Triangle</h2>
                       <p class="mt-4">Area (A)= 0.5&times;b&times;h</p>
+                      <p id="validation-text" class="text-red-400">
+
+                      </p>
                       <div class="flex justify-center gap-4 mt-4">
+                        
                         <input id="triangle-first-input" class="gap-2 bg-slate-100 w-12 px-2" type="text" name=""placeholder="b">
                         <span>cm</span>
                         <input id="triangle-second-input" class="gap-2 bg-slate-100 w-12 px-2" type="text" name="" placeholder="h">
@@ -44,8 +49,8 @@
                     </div>
                 </div>
 
-                <div class="card bg-base-300 shadow-xl w-1/4 text-center px-5">
-                    <figure class="flex justify-center mt-4 h-40"><img src="images/Rectangle.png" alt="Shoes" /></figure>
+                <div id="rectangle-random-bg" class="card bg-base-300 shadow-xl text-center px-5">
+                    <figure class="flex justify-center mt-4 h-40 w-60"><img src="images/Rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body mt-4">
                       <h2 id="rectangle-name" class="font-bold text-3xl mt-4">Rectangle</h2>
                       <p class="mt-4">Area (A)=W&times;l</p>
@@ -61,8 +66,8 @@
                     </div>
                 </div>
 
-                <div class="card bg-base-300 shadow-xl w-1/4 text-center px-5">
-                    <figure class="flex justify-center mt-4 h-40"><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                <div id="parallelogram-random-bg" class="card bg-base-300 shadow-xl text-center px-5">
+                    <figure class="flex justify-center mt-4 h-40 w-60 "><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body mt-4">
                       <h2 id="parallelogram-name" class="font-bold text-3xl mt-4">Parallelogram</h2>
                       <p class="mt-4">Area (A)= b&times;h</p>
@@ -78,8 +83,8 @@
                     </div>
                 </div>
 
-                <div class="card bg-base-300 shadow-xl w-1/4 text-center px-5">
-                    <figure class="flex justify-center mt-4 h-40"><img src="images/Rhombus.png" alt="Shoes" /></figure>
+                <div id="rhombus-random-bg" class="card bg-base-300 shadow-xl text-center px-5">
+                    <figure class="flex justify-center mt-4 h-40 w-60 "><img src="images/Rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body mt-4">
                       <h2 id="rhombus-name" class="font-bold text-3xl mt-4">Rhombus</h2>
                       <p class="mt-4">Area (A)=0.5&times;d<sub>1</sub>&times;d<sub>2</sub></p>
@@ -95,8 +100,8 @@
                     </div>
                 </div>
 
-                <div class="card bg-base-300 shadow-xl w-1/4 text-center px-5">
-                    <figure class="flex justify-center mt-4 h-40"><img src="images/Pentagon.png" alt="Shoes" /></figure>
+                <div id="pentagon-random-bg" class="card bg-base-300 shadow-xl text-center px-5">
+                    <figure class="flex justify-center mt-4 h-40 w-60 "><img src="images/Pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body mt-4">
                       <h2 id="pentagon-name" class="font-bold text-3xl mt-4">Pentagon</h2>
                       <p class="mt-4">Area (A)=0.5&times;p&times;b</p>
@@ -112,8 +117,8 @@
                     </div>
                 </div>
 
-                <div class="card bg-base-300 shadow-xl w-1/4 text-center px-5">
-                    <figure class=" justify-center mt-4 h-40"><img src="images/Ellipse.png" alt="Shoes" /></figure>
+                <div id="ellipse-random-bg" class="card bg-base-300 shadow-xl text-center px-5">
+                    <figure class=" justify-center mt-4 h-40 w-60 "><img src="images/Ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body mt-4">
                       <h2 id="ellipse-name" class="font-bold text-3xl mt-4">Ellipse</h2>
                       <p class="mt-4">Area (A)=&pi;&times;a&times;b</p>
