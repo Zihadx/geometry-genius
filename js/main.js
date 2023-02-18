@@ -4,6 +4,15 @@ document.getElementById('btn-triangle').addEventListener('click' , function(){
     const triangleFirstInputValue = getInputValueById('triangle-first-input');
     const triangleSecondInputValue = getInputValueById('triangle-second-input');
    
+    if(isNaN(triangleFirstInputValue) || triangleFirstInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+    if(isNaN(triangleSecondInputValue) || triangleSecondInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+
     const triangleCalculat = 0.5 * triangleFirstInputValue * triangleSecondInputValue ;
 
     addTableData(nameOfTriangle ,triangleCalculat);
@@ -18,6 +27,16 @@ document.getElementById('btn-rectangle').addEventListener('click' , function(){
     const rectangleFirstInputValue = getInputValueById('rectangle-first-input');
     const rectangleSecondInputValue = getInputValueById('rectangle-second-input');
 
+    if(isNaN(rectangleFirstInputValue) || rectangleFirstInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+    if(isNaN(rectangleSecondInputValue) || rectangleSecondInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+
+
     const rectangleCalculate = rectangleFirstInputValue * rectangleSecondInputValue ;
 
     addTableData(nameOfRectangle , rectangleCalculate);
@@ -30,6 +49,16 @@ document.getElementById('btn-Parallelogram').addEventListener('click',function (
     const parallelogramFirstInputValue = getInputValueById('parallelogram-first-input');
     const parallelogramSecondInputValue = getInputValueById('parallelogram-second-input');
 
+    if(isNaN(parallelogramFirstInputValue) || parallelogramFirstInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+    if(isNaN(parallelogramSecondInputValue) || parallelogramSecondInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+
+
     const parallelogramCalculate = parallelogramFirstInputValue * parallelogramSecondInputValue ;
 
     addTableData(nameOfParallelogram, parallelogramCalculate);
@@ -41,8 +70,18 @@ document.getElementById('btn-Parallelogram').addEventListener('click',function (
 document.getElementById('btn-rhombus').addEventListener('click', function(){
     // console.log('rhombus')
     const nameOfRhombus = getNameById('rhombus-name');
-    const rhombusFirstInputValue = getInputValueById('rectangle-first-input');
-    const rhombusSecondInputValue = getInputValueById('rectangle-second-input');
+    const rhombusFirstInputValue = getInputValueById('rhombus-first-input');
+    const rhombusSecondInputValue = getInputValueById('rhombus-second-input');
+    
+    if(isNaN(rhombusFirstInputValue) || rhombusFirstInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+    if(isNaN(rhombusSecondInputValue) || rhombusSecondInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+
 
     const rhombusCalculate = 0.5 * rhombusFirstInputValue * rhombusSecondInputValue;
 
@@ -57,6 +96,16 @@ document.getElementById('btn-pentagon').addEventListener('click' , function(){
     const pentagonFirstInputValue = getInputValueById('pentagon-first-input');
     const pentagonSecondInputValue = getInputValueById('pentagon-second-input');
 
+    if(isNaN(pentagonFirstInputValue) || pentagonFirstInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+    if(isNaN(pentagonSecondInputValue) || pentagonSecondInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+
+
     const pentagonCalculate = 0.5 * pentagonFirstInputValue * pentagonSecondInputValue;
 
     addTableData(nameOfpentagon , pentagonCalculate);
@@ -69,6 +118,16 @@ document.getElementById('btn-ellipse').addEventListener('click' , function(){
     const nameOfEllipse= getNameById('ellipse-name');
     const ellipseFirstInputValue = getInputValueById('ellipse-first-input');
     const ellipseSecondInputValue = getInputValueById('ellipse-second-input');
+
+    if(isNaN(ellipseFirstInputValue) || ellipseFirstInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+    if(isNaN(ellipseSecondInputValue) || ellipseSecondInputValue <0 ){
+        alert('Wrong number')
+        return ;
+    }
+
 
     const ellipseCalculate = 3.14 * ellipseFirstInputValue * ellipseSecondInputValue;
 
